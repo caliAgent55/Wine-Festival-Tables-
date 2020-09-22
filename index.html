@@ -1,0 +1,94 @@
+echo "# Wine-Festival-Tables-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/caliAgent55/Wine-Festival-Tables-.git
+git push -u origin master
+                
+                <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aguillar Family Wine Festival</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Annual Aguillar Family Wine Festival</h1>
+  </header>
+  
+  <div class="container">   <!-- inside the div element with a class of "container", create a new <table> element -->
+    <table>
+      <thead>               <!-- Inside the table element, add a section for table headings using <thead> -->
+        <tr>                <!-- Then add two rows inside of it using the table row element -->
+          <th colspan="2">  <!-- Inside the first table row element, add a table heading element Inside that add two <h2> elements: time, event. Add colspan=2 to stretch "Wine Festival Schedule" to cover the entire table--> 
+            <h1>Wine Festival Schedule</h1> 
+            </th>
+        </tr>
+        <tr>                 <!-- Add two rows inside of it using the table row element -->
+          <th>
+            <h2>Time</h2>
+            </th>
+            <th>
+              <h2>Event</h2>
+            </th>
+        </tr>
+      </thead>
+      <tbody>                 <!-- Inside the table body, create 5 rows using the table row element. -->
+        <tr>
+          <td class="left">   <!-- Inside each row, create two cells using the table data element. The first table data in each row should have the attrubute class with the value "left" -->
+            <h3>12:00 PM</h3>
+          </td>
+          <td>                <!-- Inside the <td> elements thta do not havea class attribute value of "left", add <h3> elements that include the name of events -->
+          <h3>Welcome Reception</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">    <!-- Inside each of the 5 <td class=:left"> elements, add <h3> elements that include the times of the events -->
+            <h3>1:00 PM</h3>
+          </td>
+          <td>
+            <h3>Storytelling & Tasting</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+             <h3>2:00 PM</h3>
+          </td>
+          <td>
+            <h3>Wine Luncheon</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+            <h3>3:00 PM</h3>
+          </td>
+          <td>
+            <h3>Aguillar Family Wines</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="left">
+             <h3>4:00 PM</h3>
+          </td>
+          <td>
+            <h3>Wine & Cheese Tasting</h3>
+          </td>
+        </tr>
+      </tbody> <!-- Below the closing </thead> tag, section off the table using the table body element. -->
+    </table>
+  </div>
+  
+  <footer>
+    <h3>Contact</h3>
+    <h3>Location</h3>
+    <h3>Privacy Policy</h3>
+  </footer>
+</body>
+
+</html>
